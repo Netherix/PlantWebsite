@@ -1,11 +1,10 @@
 // ShopNowButton.tsx
-
-import React from 'react';
 import Button from '@mui/material/Button';
+import './shopNowButton.css'; // Import the CSS file
 
 const ShopNowButton = () => {
   return (
-    <Button variant="contained" color="primary" sx={{ position: 'absolute', bottom: '20px', left: '50%', transform: 'translateX(-50%)' }}>
+    <Button variant="contained" color="primary" className="shopNowButton">
       Shop Now
     </Button>
   );

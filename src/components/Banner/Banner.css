@@ -1,0 +1,28 @@
+.banner-text {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: right;
+}
+  
+  .banner-text h1 {
+    font-size: 24px;
+    color: white;
+}
+  
+  @media (max-width: 768px) {
+    /* Adjust positioning for smaller screens */
+    .banner-text {
+      right: 5%;
+    }
+}
+
+.shopNowButton {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+  

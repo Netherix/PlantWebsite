@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "../../components/Navbar/Navbar";
 import BannerImage from "../../components/Banner/BannerImage";
 import BannerText from "../../components/Banner/BannerText";
