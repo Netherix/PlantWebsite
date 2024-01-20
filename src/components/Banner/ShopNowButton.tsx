@@ -1,6 +1,5 @@
-// ShopNowButton.tsx
 import Button from '@mui/material/Button';
-import './shopNowButton.css'; // Import the CSS file
+import './Banner.css'
 
 const ShopNowButton = () => {
   return (

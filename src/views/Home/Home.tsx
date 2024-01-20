@@ -1,8 +1,8 @@
-
 import Navbar from "../../components/Navbar/Navbar";
 import BannerImage from "../../components/Banner/BannerImage";
 import BannerText from "../../components/Banner/BannerText";
-import ShopNowButton from "../../components/Banner/ShopNowButton";
+import TrustBadges from "../../components/TrustBadges/TrustBadges";
+
 
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
       <Navbar />
       <BannerImage />
       <BannerText text="Discover our amazing plant collection!" />
-      <ShopNowButton />
+      <TrustBadges />
     </div>
   );
 };

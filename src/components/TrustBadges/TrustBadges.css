@@ -1,0 +1,10 @@
+.trust-badges-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.trust-badges-container img {
+  max-width: 100%;
+  height: auto;
+  width: 50%;
+}
