@@ -1,5 +1,5 @@
 import './TrustBadges.css'; 
-import trustBadgeImage from '../../assets/TrustBadges.png';
+import trustBadgeImage from '../../assets/Trustbadges2.png';
 
 const TrustBadges = () => {
   return (

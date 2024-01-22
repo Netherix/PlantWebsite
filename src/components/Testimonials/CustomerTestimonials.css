@@ -1,0 +1,39 @@
+/* CustomerTestimonials.css */
+
+.testimonials-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px; /* Adjust width as needed */
+}
+
+.testimonial-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Circular images */
+  width: 100px; /* Adjust size as needed */
+  margin-bottom: 10px;
+}
+
+.testimonial-comment {
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial-author {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}

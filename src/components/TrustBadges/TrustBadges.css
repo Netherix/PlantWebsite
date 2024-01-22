@@ -1,3 +1,4 @@
+/* TrustBadges.css */
 .trust-badges-container {
   text-align: center;
   padding: 10px;
@@ -6,5 +7,19 @@
 .trust-badges-container img {
   max-width: 100%;
   height: auto;
-  width: 50%;
+  width: 40%;
+  margin-top: 40px;
+}
+
+/* Media Queries for smaller screens */
+@media screen and (max-width: 768px) {
+  .trust-badges-container img {
+    margin-top: 10px; /* Reduced margin-top for medium screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .trust-badges-container img {
+    margin-top: 20px; /* Further reduced margin-top for small screens */
+  }
 }
