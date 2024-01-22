@@ -4,6 +4,7 @@ import BannerText from "../../components/Banner/BannerText";
 import TrustBadges from "../../components/TrustBadges/TrustBadges";
 import OurFavorites from "../../components/OurFavorites/OurFavorites";
 import CustomerTestimonials from "../../components/Testimonials/CustomerTestimonials";
+import NewsletterSignup from "../../components/NewsletterSignup/NewsletterSignup";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <TrustBadges />
       <OurFavorites />
       <CustomerTestimonials />
+      <NewsletterSignup />
     </div>
   );
 };

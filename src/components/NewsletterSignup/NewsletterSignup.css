@@ -1,0 +1,52 @@
+.newsletter-signup-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+  }
+
+.newsletter-input {
+    padding: 10px 20px; /* Same padding as the button */
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    height: 15px; /* Match the height with the button */
+    margin-right: 10px; /* To align precisely with the button */
+}
+
+.newsletter-image-container {
+  margin-top: 20px;
+}
+
+.newsletter-image {
+    width: 100%; /* Use full width of container */
+    max-width: 400px; /* Maximum width */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .newsletter-image {
+        max-width: 300px; /* Slightly smaller on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter-image {
+        max-width: 200px; /* Adjust for smaller screens */
+    }
+}
+
+.newsletter-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .newsletter-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  

@@ -11,7 +11,6 @@
   margin-top: 40px;
 }
 
-/* Media Queries for smaller screens */
 @media screen and (max-width: 768px) {
   .trust-badges-container img {
     margin-top: 10px; /* Reduced margin-top for medium screens */
