@@ -12,9 +12,9 @@ const Home = () => {
       <Navbar />
       <BannerImage />
       <BannerText text="Discover our amazing plant collection!" />
-      <TrustBadges />
       <OurFavorites />
       <CustomerTestimonials />
+      <TrustBadges />
       <NewsletterSignup />
     </div>
   );
