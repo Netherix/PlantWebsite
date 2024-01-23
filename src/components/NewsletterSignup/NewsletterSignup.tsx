@@ -13,7 +13,7 @@ const NewsletterSignup = () => {
   return (
     <div className="newsletter-signup-container">
       <h2>Subscribe to Our Newsletter</h2>
-      <p>Get the latest updates, straight from our garden!</p>
+      <p>Get the latest updates, straight from our garden! 🥰</p>
       <form onSubmit={handleSubmit}>
         <input 
           type="email" 

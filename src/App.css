@@ -1,11 +1,9 @@
-body, .navbar {
-    font-family: 'Belanosimia', sans-serif;
-  }
-  
-body, html {
+body {
   margin: 0;
   padding: 0;
+  font-family: 'Belanosima', sans-serif; /* Ensure this matches the imported font name exactly */
 }
 
-
-  
+* {
+  font-family: 'Belanosima', sans-serif !important;
+}
