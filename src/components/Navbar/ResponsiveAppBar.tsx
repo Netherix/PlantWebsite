@@ -38,7 +38,8 @@ function ResponsiveAppBar() {
     <AppBar position="static" sx={{ backgroundColor: '#D2B48C' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
+
+          <Box className='logo' sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
             <img src="src/assets/logo.png" alt="Logo" style={{ height: '90px', width: '130px' }} />
           </Box>
 
@@ -78,6 +79,8 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
+
+
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (

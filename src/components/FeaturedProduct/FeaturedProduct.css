@@ -1,46 +1,51 @@
 /* FeaturedProduct.css */
 
 .featured-product-section {
-    margin: 20px auto;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    width: 40%;
-    max-width: 1200px;
-    margin-top: 40px;
-  }
-  
-  /* Adjust for smaller screens */
-  @media screen and (max-width: 768px) {
-    .featured-product-section {
-      width: 90%;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .featured-product-section {
-      width: 95%;
-    }
-  }
-  
-  .featured-title {
-    margin-bottom: 20px;
-    margin-top: -10px;
-    color: #333;
-  }
-  
-  .featured-product-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .featured-product-image {
-    width: 300px;
-    margin-right: 20px;
-  }
-  
-  .product-details {
-    max-width: 300px;
-  }
-  
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  width: 40%;
+  max-width: 1200px;
+  margin-top: 40px;
+}
+
+/* Adjust for smaller screens */
+@media screen and (max-width: 768px) {
+.featured-product-section {
+  width: 90%;
+}
+}
+
+@media screen and (max-width: 480px) {
+.featured-product-section {
+  width: 95%;
+}
+}
+
+.featured-title {
+margin-bottom: 20px;
+margin-top: -10px;
+color: #333;
+}
+
+.featured-product-container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.featured-product-image {
+width: 300px;
+margin-right: 20px;
+}
+
+.product-details {
+max-width: 300px;
+}
+
+/* Remove text decoration from anchor tag */
+.featured-product-section a {
+text-decoration: none;
+color: inherit; /* Ensures text color is inherited from parent */
+}
