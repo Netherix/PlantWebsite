@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import './FeaturedProduct.css';
 
 const FeaturedProduct = () => {
   return (
     <div className="featured-product-section">
       <h1 className="featured-title">Featured Product</h1>
-      <a href=''>
+      <Link to="/product/1">
         <div className="featured-product-container">
           <img
             src="src/assets/Ruby Voodoo Rose.webp"
@@ -19,7 +20,7 @@ const FeaturedProduct = () => {
             </p>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };
