@@ -30,7 +30,7 @@ const OurFavorites = () => {
 
   return (
     <div>
-      <h1 className="favorites-heading">Our Favorites</h1> {/* Add this line */}
+      <h1 className="favorites-heading">Our Favorites</h1>
       <div className="favorites-container">
         {products.map(product => (
           <div key={product.id} className="product-card">
