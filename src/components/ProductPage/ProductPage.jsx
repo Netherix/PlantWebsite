@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useCallback, useMemo } from "react";
 import "./ProductPage.css";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import mockProducts from "./mockProducts"; // Import mock data
 
 const ProductPage = () => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const product = mockProducts.find((p) => p.id === id);
 
@@ -85,7 +86,7 @@ const ProductPage = () => {
             <img
               src={images[currentImageIndex]}
               alt={product.title}
-              className="product-image"
+              className="product-page-image"
             />
           ) : (
             <p>No images available</p>
@@ -96,7 +97,7 @@ const ProductPage = () => {
         <p className="product-price">{product.price}</p>
         <p className="product-description">{product.description}</p>
         <button className="product-buttons">Add to Cart</button>
-        <button className="product-buttons">Back to Home</button>
+        <button className="product-buttons" onClick={() => navigate('/')}>Back to Home</button>
       </div>
 
       <div className="review-section">

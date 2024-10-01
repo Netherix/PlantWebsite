@@ -1,3 +1,4 @@
+/* Product Page Styles */
 .product-page {
   display: flex;
   flex-direction: column;
@@ -26,6 +27,44 @@
   margin: 10px 0;
 }
 
+/* Image Slider Styles */
+.image-slider {
+  position: relative; /* Needed to position arrows relative to this container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.product-page-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Arrow Button Styles */
+.arrow-button {
+  position: absolute;
+  top: 50%; /* Vertically center the button */
+  transform: translateY(-50%); /* Center it properly */
+  background-color: #1ea03a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 1; /* Make sure buttons are above the image */
+}
+
+.arrow-button:first-of-type {
+  left: 10px; /* Position the left arrow */
+}
+
+.arrow-button:last-of-type {
+  right: 10px; /* Position the right arrow */
+}
+
 .product-price {
   font-size: 1.5rem;
   color: black;
@@ -39,7 +78,6 @@
   padding: 10px;
   border-radius: 10px;
   box-shadow: #218838 0px 1px 4px, #218838 0px 0px 0px 3px;
-  
 }
 
 .product-buttons {
@@ -119,4 +157,3 @@
 .star:hover {
   color: gold; /* Hover effect for stars */
 }
-

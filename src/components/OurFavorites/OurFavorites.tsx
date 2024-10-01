@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './OurFavorites.css';
 
 const OurFavorites = () => {
@@ -18,13 +19,13 @@ const OurFavorites = () => {
       id: 3,
       title: "Siam Tulip",
       price: "$15.99",
-      imageUrl: "src/assets/Curcuma Alismatifolia 'Siam Tulip.png" // Replace with the actual path of the image
+      imageUrl: "src/assets/Curcuma Alismatifolia Siam Tulip.png"
     },
     {
       id: 4,
       title: "Chrysanthemum",
       price: "$22.99",
-      imageUrl: "src/assets/Mums (Chrysanthemum).png" // Replace with the actual path of the image
+      imageUrl: "src/assets/Mums (Chrysanthemum).png"
     }
   ];
 
@@ -32,11 +33,13 @@ const OurFavorites = () => {
     <div>
       <h1 className="favorites-heading">Our Favorites</h1>
       <div className="favorites-container">
-        {products.map(product => (
-          <div key={product.id} className="product-card">
-            <img src={product.imageUrl} alt={product.title} className="product-image" />
-            <h3>{product.title}</h3>
-            <p>{product.price}</p>
+        {products.map((product, index) => (
+          <div key={index} className="product-card">
+            <Link to={`/product/${index + 2}`} className='product-link'>
+              <img src={product.imageUrl} alt={product.title} className="favorite-images" />
+              <h3>{product.title}</h3>
+              <p>{product.price}</p>
+            </Link>
             <button className="add-to-cart-button">Add to Cart</button>
           </div>
         ))}
