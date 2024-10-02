@@ -14,7 +14,7 @@ const ProductPage = () => {
   const [reviews, setReviews] = useState([]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0); // State for current image index
 
-  // Use useMemo to memoize images based on the product
+  // Memoize images based on the product
   const images = useMemo(() => ( 
     product && product.images ? product.images : []
   ), [product]); 
@@ -73,6 +73,11 @@ const ProductPage = () => {
     };
   }, [handleKeyDown]);
 
+  // New function to handle thumbnail click
+  const handleThumbnailClick = (index) => {
+    setCurrentImageIndex(index); // Set the current image index to the clicked thumbnail's index
+  };
+
   return product ? (
     <div className="product-page">
       <div className="product-details">
@@ -81,7 +86,6 @@ const ProductPage = () => {
         {/* Image Slider */}
         <div className="image-slider">
           <button className="arrow-button" onClick={prevImage}>&lt;</button>
-          {/* Ensure images array is not empty before accessing */}
           {images.length > 0 ? (
             <img
               src={images[currentImageIndex]}
@@ -92,6 +96,19 @@ const ProductPage = () => {
             <p>No images available</p>
           )}
           <button className="arrow-button" onClick={nextImage}>&gt;</button>
+        </div>
+
+        {/* Thumbnails Section */}
+        <div className="thumbnail-container">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Thumbnail ${index + 1}`}
+              className={`thumbnail ${index === currentImageIndex ? 'active' : ''}`} // Highlight the active thumbnail
+              onClick={() => handleThumbnailClick(index)} // Call the function on click
+            />
+          ))}
         </div>
 
         <p className="product-price">{product.price}</p>
