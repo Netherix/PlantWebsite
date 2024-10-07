@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useMemo } from "react";
 import "./ProductPage.css";
 import { useParams, useNavigate } from "react-router-dom";
-import mockProducts from "./mockProducts"; // Import mock data
+import mockProducts from "./mockProducts";
 
 const ProductPage = () => {
   const navigate = useNavigate();
@@ -78,11 +78,10 @@ const ProductPage = () => {
     setCurrentImageIndex(index); // Set the current image index to the clicked thumbnail's index
   };
 
-  return product ? (
+  return product ? (    
     <div className="product-page">
       <div className="product-details">
         <h1 className="product-title">{product.title}</h1>
-
         {/* Image Slider */}
         <div className="image-slider">
           <button className="arrow-button" onClick={prevImage}>&lt;</button>
