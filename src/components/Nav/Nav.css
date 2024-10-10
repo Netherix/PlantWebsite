@@ -1,0 +1,119 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .nav {
+    background-color: #D2B48C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+  }
+  
+  .nav-links li:hover {
+    background-color: #4CAF50;
+  }
+  
+  .logo {
+    cursor: pointer;
+    width: 7rem;
+  }
+  
+  /* Hamburger icon styling */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+  }
+  
+  /* Popup Menu Styling */
+  .popup-menu {
+    position: fixed;
+    top: 0;
+    left: 0; /* Align to the left of the screen */
+    width: 50vw; /* Take up half the screen width */
+    height: 100vh; /* Full height */
+    background-color: #D2B48C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popup-close {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Close button remains in the top-right of the menu */
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .popup-close:hover {
+    color: #4CAF50;
+  }
+  
+  .popup-links {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .popup-links li {
+    margin: 3rem 0;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .popup-links li:hover {
+    color: #4CAF50;
+  }
+  
+  /* Cart icon styling */
+  .cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 767px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .nav .cart {
+      position: relative;
+    }
+  }
+  

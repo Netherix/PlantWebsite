@@ -42,14 +42,13 @@
 }
 
 .product-details {
-  max-width: 600px;
+  max-width: 1000px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .product-title {
-  font-size: 2rem;
-  margin: 10px 0;
+  font-size: 3rem;
 }
 
 /* Image Slider Styles */

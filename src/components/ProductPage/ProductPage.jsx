@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, useMemo } from "react";
 import "./ProductPage.css";
 import { useParams, useNavigate } from "react-router-dom";
 import mockProducts from "./mockProducts";
+import Nav from "../Nav/nav";
 
 const ProductPage = () => {
   const navigate = useNavigate();
@@ -78,7 +79,9 @@ const ProductPage = () => {
     setCurrentImageIndex(index); // Set the current image index to the clicked thumbnail's index
   };
 
-  return product ? (    
+  return product ? (  
+    <> 
+    <Nav />
     <div className="product-page">
       <div className="product-details">
         <h1 className="product-title">{product.title}</h1>
@@ -156,6 +159,7 @@ const ProductPage = () => {
         </div>
       </div>
     </div>
+    </> 
   ) : (
     <div>Product not found</div>
   );

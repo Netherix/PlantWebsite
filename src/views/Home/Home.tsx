@@ -1,4 +1,5 @@
-import Navbar from "../../components/Navbar/Navbar";
+// @ts-expect-error for navbar
+import Nav from "../../components/Nav/Nav"
 import BannerImage from "../../components/Banner/BannerImage";
 import BannerText from "../../components/Banner/BannerText";
 import TrustBadges from "../../components/TrustBadges/TrustBadges";
@@ -11,7 +12,7 @@ import LazyLoad from 'react-lazyload';
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      <Nav />
       <BannerImage />
       <BannerText text="Discover our amazing plant collection! 🌿🌱🌼" />
       <hr style={{ margin: '20px 0', border: '0.5px solid #ccc' }} />
