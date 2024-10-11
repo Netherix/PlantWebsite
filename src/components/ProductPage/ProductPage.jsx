@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback, useMemo } from "react";
 import "./ProductPage.css";
 import { useParams, useNavigate } from "react-router-dom";
 import mockProducts from "./mockProducts";
-import Nav from "../Nav/nav";
+import Nav from "../Nav/Nav";
 
 const ProductPage = () => {
   const navigate = useNavigate();

@@ -27,7 +27,7 @@
   height: 300px;
 }
 
-.add-to-cart-button {
+.cart-button {
   background-color: #4CAF50 !important; /* Green background */
   color: white; /* White text */
   padding: 10px 20px; /* Padding */
@@ -38,7 +38,7 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
-.add-to-cart-button:hover {
+.cart-button:hover {
   background-color: #45a049; /* Darker green on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly larger shadow on hover for a 'lifting' effect */
 }

@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+// @ts-expect-error AddToCart
+import AddToCart from '../AddToCart/AddToCart.jsx';
 import './OurFavorites.css';
 
 const OurFavorites = () => {
@@ -33,14 +35,14 @@ const OurFavorites = () => {
     <div>
       <h1 className="favorites-heading">Our Favorites</h1>
       <div className="favorites-container">
-        {products.map((product, index) => (
-          <div key={index} className="product-card">
-            <Link to={`/product/${index + 2}`} className='product-link'>
+        {products.map((product) => (
+          <div key={product.id} className="product-card">
+            <Link to={`/product/${product.id}`} className='product-link'>
               <img src={product.imageUrl} alt={product.title} className="favorite-images" />
               <h3>{product.title}</h3>
               <p>{product.price}</p>
             </Link>
-            <button className="add-to-cart-button">Add to Cart</button>
+              <AddToCart className='cart-button' product={product} />
           </div>
         ))}
       </div>

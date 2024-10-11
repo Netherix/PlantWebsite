@@ -1,10 +1,9 @@
-import { useState, useEffect } from "react";
-import Nav from "../Nav/Nav";
+import React, { useState, useEffect } from "react";
+import Nav from "../../components/Nav/Nav";
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
 
-  // Load cart items from localStorage when the component mounts
   useEffect(() => {
     const storedCartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
     setCartItems(storedCartItems);
