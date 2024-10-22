@@ -3,7 +3,6 @@ import React from "react";
 const AddToCart = ({ product, className }) => {
   const addToCart = () => {
     const cart = JSON.parse(localStorage.getItem("cartItems")) || [];
-
     const existingItem = cart.find((item) => item.id === product.id);
 
     if (existingItem) {
