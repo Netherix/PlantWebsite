@@ -19,6 +19,8 @@ const Cart = () => {
     localStorage.setItem("cartItems", JSON.stringify(updatedCartItems)); // Update localStorage
   };
 
+  console.log(cartItems)
+
   return (
     <>
       <Nav cartItemCount={cartItemCount} /> {/* Pass cart item count as a prop */}
@@ -28,7 +30,10 @@ const Cart = () => {
           <ul>
             {cartItems.map((item, index) => (
               <li key={index}>
-                <h3>{item.name}</h3>
+                <p>{item.title}</p>
+                <img
+                  src={item.images[0]}               
+                />
                 <p>Price: {item.price}</p>
                 <p>Quantity: {item.quantity}</p>
                 <button onClick={() => handleDelete(index)}>Delete</button> {/* Delete button */}

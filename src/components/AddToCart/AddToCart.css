@@ -1,0 +1,36 @@
+.cart-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 48px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Hand icon on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    display: flex; /* Use flexbox for centering spinner/text */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    position: relative; /* Position relative for the loader */
+    font-size: 1rem;
+  }
+  
+  .cart-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly larger shadow on hover for a 'lifting' effect */
+  }
+  
+  .loader {
+    border: 2px solid transparent; /* Make it a circle */
+    border-top: 2px solid #fff; /* Color of the spinner (white in this case) */
+    border-radius: 50%; /* Make it round */
+    width: 20px; /* Size of the spinner */
+    height: 20px; /* Size of the spinner */
+    animation: spin 1s linear infinite; /* Spinner animation */
+  }
+  
+  /* Spinner animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

@@ -37,7 +37,7 @@ const OurFavorites = () => {
       <div className="favorites-container">
         {products.map((product) => (
           <div key={product.id} className="product-card">
-            <Link to={`/product/${product.id}`} className='product-link'>
+            <Link to={`/product/${product.id + 1}`} className='product-link'>
               <img src={product.imageUrl} alt={product.title} className="favorite-images" />
               <h3>{product.title}</h3>
               <p>{product.price}</p>
