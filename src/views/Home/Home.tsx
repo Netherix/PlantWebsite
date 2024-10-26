@@ -1,12 +1,11 @@
-// @ts-expect-error for navbar
-import Nav from "../../components/Nav/Nav"
-import BannerImage from "../../components/Banner/BannerImage";
-import BannerText from "../../components/Banner/BannerText";
-import TrustBadges from "../../components/TrustBadges/TrustBadges";
-import OurFavorites from "../../components/OurFavorites/OurFavorites";
-import CustomerTestimonials from "../../components/Testimonials/CustomerTestimonials";
-import NewsletterSignup from "../../components/NewsletterSignup/NewsletterSignup";
-import FeaturedProduct from "../../components/FeaturedProduct/FeaturedProduct";
+import Nav from "../../components/Nav/Nav.jsx"
+import BannerImage from "../../components/Banner/BannerImage.js";
+import BannerText from "../../components/Banner/BannerText.js";
+import TrustBadges from "../../components/TrustBadges/TrustBadges.js";
+import OurFavorites from "../../components/OurFavorites/OurFavorites.jsx";
+import CustomerTestimonials from "../../components/Testimonials/CustomerTestimonials.js";
+import NewsletterSignup from "../../components/NewsletterSignup/NewsletterSignup.js";
+import FeaturedProduct from "../../components/FeaturedProduct/FeaturedProduct.jsx";
 import LazyLoad from 'react-lazyload';
 
 const Home = () => {

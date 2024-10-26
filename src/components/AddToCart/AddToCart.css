@@ -20,6 +20,7 @@
   }
   
   .loader {
+    padding: 10px, 10px;
     border: 2px solid transparent; /* Make it a circle */
     border-top: 2px solid #fff; /* Color of the spinner (white in this case) */
     border-radius: 50%; /* Make it round */

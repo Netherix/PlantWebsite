@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useCallback, useMemo } from "react";
 import "./ProductPage.css";
 import { useParams, useNavigate } from "react-router-dom";
-import mockProducts from "./mockProducts";
+import mockProducts from './mockProducts'
 import Nav from "../Nav/Nav";
 import AddToCart from "../AddToCart/AddToCart";
+import NewsletterSignup from "../NewsletterSignup/NewsletterSignup";
 
 const ProductPage = () => {
   const navigate = useNavigate();
@@ -177,9 +178,13 @@ const ProductPage = () => {
           </div>
         </div>
       </div>
+      <NewsletterSignup />
     </>
   ) : (
-    <div>Product not found</div>
+    <div>
+      Product not found
+      <NewsletterSignup />
+    </div>
   );
 };
 

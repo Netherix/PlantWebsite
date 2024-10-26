@@ -26,7 +26,7 @@ const NewsletterSignup = () => {
       </form>
       <div className="newsletter-image-container">
         <img 
-          src="src/assets/CardBadges.png" // Replace with the path to your credit card badges image
+          src="../src/assets/CardBadges.png" // Replace with the path to your credit card badges image
           alt="Payment Options" 
           className="newsletter-image"
         />
