@@ -42,6 +42,8 @@ const Cart = () => {
     localStorage.setItem("cartItems", JSON.stringify(updatedCartItems)); // Update localStorage
   };
 
+  console.log(cartItems)
+
   return (
     <>
       <Nav cartItemCount={cartItemCount} />
@@ -68,7 +70,7 @@ const Cart = () => {
                   />
                   <div className="cart-item-details">
                     <p>{item.title}</p>
-                    <p>Price: ${item.price}</p>
+                    <p>Price: ${(item.price * item.quantity).toFixed(2)}</p>
                     <p>
                       Quantity:
                       <select
@@ -88,7 +90,6 @@ const Cart = () => {
                         ))}
                       </select>
                     </p>
-                    <p>Total: ${(item.price * item.quantity).toFixed(2)}</p>
                     <button
                       className="delete-button"
                       onClick={() => handleDelete(index)}
